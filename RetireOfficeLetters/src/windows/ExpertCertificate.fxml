@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="windows.ExpertCertificate">
+   <children>
+      <Label layoutX="150.0" layoutY="14.0" prefHeight="66.0" prefWidth="298.0" text="مأمورية شهادات الخبرة" textAlignment="CENTER">
+         <font>
+            <Font name="Andalus" size="41.0" />
+         </font>
+      </Label>
+      <VBox layoutX="24.0" layoutY="80.0" prefHeight="458.0" prefWidth="570.0" spacing="20.0" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: beige;">
+               <children>
+                  <TextField fx:id="rotba" alignment="CENTER_RIGHT" layoutX="356.0" layoutY="14.0" promptText="الرتبة">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="name" alignment="CENTER_RIGHT" layoutX="15.0" layoutY="14.0" prefHeight="30.0" prefWidth="318.0" promptText="الإسم">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="education" alignment="CENTER_RIGHT" layoutX="356.0" layoutY="52.0" promptText="المؤهل الدراسي">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="phone" alignment="CENTER_RIGHT" layoutX="15.0" layoutY="51.0" prefHeight="30.0" prefWidth="318.0" promptText="التليفون">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextField>
+                  <DatePicker fx:id="date" layoutX="146.0" layoutY="89.0" prefHeight="30.0" prefWidth="186.0" promptText="تاريخ الإحالة" />
+                  <TextField fx:id="oldness" alignment="CENTER_RIGHT" layoutX="356.0" layoutY="90.0" promptText="رقم الأقدمية">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="399.0" layoutY="131.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" text="حذف">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Button layoutX="440.0" layoutY="554.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" text="إضافة عنصر">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="231.0" layoutY="553.0" text="Report Status">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
