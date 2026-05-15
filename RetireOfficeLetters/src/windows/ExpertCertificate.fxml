@@ -54,12 +54,12 @@
             </AnchorPane>
          </children>
       </VBox>
-      <Button layoutX="440.0" layoutY="554.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" text="إضافة عنصر">
+      <Button layoutX="440.0" layoutY="554.0" mnemonicParsing="false" onAction="#createReport" prefHeight="26.0" prefWidth="142.0" text="إضافة عنصر">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Label layoutX="231.0" layoutY="553.0" text="Report Status">
+      <Label fx:id="status" layoutX="231.0" layoutY="553.0" text="Report Status">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>
